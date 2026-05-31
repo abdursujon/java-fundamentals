@@ -1,0 +1,49 @@
+# Compiled class files
+*.class
+out/
+bin/
+build/
+target/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+*.code-workspace
+
+# Build tools
+.gradle/
+.mvn/
+mvnw
+mvnw.cmd
+gradlew
+gradlew.cmd
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Java crash / misc
+hs_err_pid*
+replay_pid*
+*.jar
+*.war
+*.ear
+
+# Env / secrets
+.env
+*.local
