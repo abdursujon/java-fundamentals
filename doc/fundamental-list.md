@@ -1,11 +1,4 @@
-# Java Fundamentals 
-
-This dedicated to learn java fundamentals.  Anyone can use it as a guide to learn java crusial ground knowledge practically.
-
-List of things that will be covered
-
-## 1. Fundamentals of java
-
+# Java Fundamentals
 ### chapter1_basics/
 - Variables x
 - DataTypes x
@@ -32,13 +25,13 @@ Byte x
 Short x
 StringBuilder x
 StringBuffer x
-Thread
-Runnable
-Exception
-RuntimeException
-Error
-BuiltInClass
-ClassLoader
+Thread x
+Runnable 
+Exception x
+RuntimeException x
+Error x
+BuiltInClass x
+ClassLoader x
 Number
 Enum x
 Record x
@@ -94,7 +87,9 @@ Record x
 - Iterators x
 - Object x
 - Objects x
-- Streams x
+- Streams 
+- Argument
+- Collectors 
 
 ### chapter10_object_behavior
 - EqualsHashCode x
@@ -110,41 +105,53 @@ Record x
 - AccessModifiers, StaticKeyword, FinalKeyword, SuperKeyword, OverloadingOverriding x
 
 ### chapter12_exceptions/
-Must-know (daily use)
+Must-know
 1. TryCatchFinally x
 2. CheckedVsUnchecked x
 3. ThrowVsThrows x
 4. CommonRuntimeExceptions x
 5. TryWithResources x
-6. ThrowableHierarchy
-![img.png](assets/img.png)
+6. ThrowableHierarchy x
+## Throwable Hierarchy
+
+                      Throwable
+                  /             \   
+          Error                    Exception
+            |                     /         \
+     (OutOfMemoryError,   RuntimeException   (checked exceptions)
+      StackOverflowError)      |              IOException
+         (unchecked)           |              SQLException
+                      (unchecked)             ClassNotFoundException
+                      NullPointerException    
+                      IllegalArgumentException
+                      ArrayIndexOutOfBoundsException
+                      ArithmeticException
+
 7. CommonCheckedCompileTimeExceptions x
-8. ExceptionPropagation
+8. ExceptionPropagation x
 When exception is not handled, exception are propagated upward (spread upward). So if we have three methods calling each other.
 For example, void a(){},  void b(){a()}, void c(){b()} here if c does not handle exception, jvm looks for exception in b, if not in 
 b, it looks in a, if not in a, looks for the main function. If main does not handle the exception either, program reaches the JVM default
 exceptions and through unchecked(Runtime) exception. 
 
-Important (frequent)
+Important
 9. CustomCheckedException x
 10. CustomUncheckedException x
 11. MultiCatch x
 12. RethrowAndWrap x
 13. ExceptionChaining x
 
-Good to know 
+Extra
 14. FinallyPitfalls
 15. ExceptionsInLambdas
 16. ExceptionsInConstructors
 17. ExceptionsInOverriding
-
-Niche 
 18. ExceptionsInThreads
 19. SuppressedExceptions
 20. AssertionsVsExceptions
 
 ### chapter13_functional/
-1. Generics       
+1. Generics x       
 2. Lambda          
 3. Comparable
 4. Comparator
@@ -155,6 +162,8 @@ Niche
 9. Supplier
 10. Method References
 11. Optional
+12. BinaryOperator
+13. Function
 
 ### chapter14_file_handling/
 - FileHandling

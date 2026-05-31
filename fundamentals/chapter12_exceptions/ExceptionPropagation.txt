@@ -1,0 +1,2 @@
+**ExceptionPropagation:** an unhandled exception travels up the call stack. If `c()` calls `b()` calls `a()` and none handle it,
+the JVM walks `a → b → main`; if `main` doesn't handle it either, the JVM's default handler throws it as an unchecked (runtime) exception and terminates the program.
