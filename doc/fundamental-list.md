@@ -137,7 +137,7 @@ Important
 9. CustomCheckedException x
 10. CustomUncheckedException x
 11. MultiCatch x
-12. RethrowAndWrap  ddx
+12. RethrowAndWrap  x
 13. ExceptionChaining x
 
 Extra

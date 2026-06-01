@@ -45,6 +45,26 @@ public class NestedPublicProtectedAndPrivateClass implements InterfaceInJava{
                 "I have public, private and protected class inside me.");
     }
 
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void speakTwo() {
+
+    }
+
+    @Override
+    public void speakThree() {
+
+    }
+
+    @Override
+    public void speakFour() {
+
+    }
+
     public static void main(String[] args) {
         NestedPublicProtectedAndPrivateClass n = new NestedPublicProtectedAndPrivateClass();
         Teacher t = n.new Teacher("Sujon");
