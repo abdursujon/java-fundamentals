@@ -87,9 +87,8 @@ Record x
 - Iterators x
 - Object x
 - Objects x
-- Streams 
-- Argument
-- Collectors 
+- Streams x 
+- Collectors x
 
 ### chapter10_object_behavior
 - EqualsHashCode x
@@ -138,7 +137,7 @@ Important
 9. CustomCheckedException x
 10. CustomUncheckedException x
 11. MultiCatch x
-12. RethrowAndWrap x
+12. RethrowAndWrap  ddx
 13. ExceptionChaining x
 
 Extra
