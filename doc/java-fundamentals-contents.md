@@ -176,26 +176,20 @@ Conventions:
 - V = Value/result — Callable<V>
 
 # Application of different functional interfaces 
-13. Optional
+13. Optional x
 14. Streams  x
 
 ### chapter14_file_handling/
-- FileHandling
-- Serialization
-- NIO
+- FileHandling x
+- Serialization x
+- NIO x
 
-### chapter16_advanced/
+### chapter15_concurrency/
+- Threads, Runnable/Callable, synchronized, volatile
+- ExecutorService / ThreadPool, Future / CompletableFuture
+- Race conditions / deadlocks, wait()/notify(), Lock/ReentrantLock
+
+### chapter16_jvm_internals/
 - Annotations
-- GarbageCollection
-- Multithreading
 - Reflection
-- Concurrency
-  Threads (creating, starting, stopping)
-  Runnable / Callable
-  synchronized keyword
-  volatile keyword
-  ExecutorService / ThreadPool
-  Future / CompletableFuture
-  Race conditions / deadlocks
-  wait() / notify()
-  Lock / ReentrantLock
+- GarbageCollection
