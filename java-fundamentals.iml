@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter10_object_behavior" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter11_oop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter12_exceptions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter13_functional" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter14_file_handling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter15_thread_and_concurrency" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter1_basics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter2_control_flow" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter3_arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter4_strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter5_methods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter6_input_output" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter7_utility_classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter8_typeof_classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter9_collections_and_java_useful_classes" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,3 +1,6 @@
+import functional_interfaces.BinaryOperator;
+import functional_interfaces.Callable;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -20,14 +23,14 @@ import java.util.function.Supplier;
  *   - Supplier<T> — java.util.function
  */
 public class Lamda {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         // 1. Runnable - no args, does not return anything
         Runnable greet = () -> System.out.println("This is lamda implementing runnable interface");
-        greet.run();
+        greet.run(); // run static method of Runnable
 
         // 2. Comparator - sort a list with lamda instead of using anonymous class
         List<String> names = new ArrayList<>(List.of("Sujon", "Ryan", "Ikaras", "Kiamas"));
-        names.sort((a, b) -> a.length() - b.length());
+        names.sort((a, b) -> a.length() - b.length()); // sort is default method of list interface
         System.out.println(names);
         List<Integer> nums = new ArrayList<>(List.of(1, 6, 9, 203, 4));
         // if n1 < n2 (e.g - 2) n1 before n2 if n1 = n2 no change if n1 > n2 n1 after n2
@@ -35,12 +38,12 @@ public class Lamda {
         System.out.println(nums);
         nums.sort((n1, n2) -> Integer.compare(n1, n2));
         System.out.println(nums);
-        nums.sort((Comparator.naturalOrder()));
+        nums.sort((Comparator.naturalOrder())); // naturalOrder() static method of Comparator
         System.out.println(nums);
 
         // 3. Predicate<T> - takes T, returns boolean
         Predicate<Integer> isOdd = n -> n % 2 != 0;
-        System.out.println(isOdd.test(89)); // where test comes from
+        System.out.println(isOdd.test(89)); // test is abstract method of Predicate
 
         // 4. Function<T, R> - takes T, returns R
         Function<String, Integer> sLen = s -> s.length();
@@ -48,10 +51,25 @@ public class Lamda {
 
         // 5. Consumer<T> - takes T, returns nothing
         Consumer<String> print = s -> System.out.println(s.toUpperCase());
-        print.accept("hi how do u do?"); // where accept comes from
+        print.accept("hi how do u do?"); // accept is abstract method of Consumer interface
 
         // 6. Supplier<T> - n args, supplies a T
         Supplier<Double> randomValue = () -> Math.floor(10 * Math.random());
-        System.out.println(randomValue.get()); // where get comes from
+        System.out.println(randomValue.get()); // get is an abstract method of Supplier interface
+
+        // 7. BinaryOperator
+        BinaryOperator<Integer> addTwoItems = (a, b) -> a + b;
+        System.out.println(addTwoItems.apply(1, 5));
+
+        // 8. Callable
+        Callable<Integer> sumOfFirstHundredNumber = () -> {
+            int total = 0;
+            for(int i = 1; i <= 100; i++){
+                total+=i;
+            }
+            return total;
+        };
+        System.out.println(sumOfFirstHundredNumber.call());
+
     }
 }

@@ -2,11 +2,11 @@ package generics;
 
 import java.util.Arrays;
 
-public class CustomArrayList<E> {
+public class GenericsAndHowItIsUsedInArrayList<E> {
     private Object[] element;
     private int size = 0;
 
-    public CustomArrayList(){
+    public GenericsAndHowItIsUsedInArrayList(){
         element = new Object[10];
     }
 
@@ -41,12 +41,12 @@ public class CustomArrayList<E> {
     }
 
     public static void main(String[] args){
-        CustomArrayList<String> cr = new CustomArrayList<>();
+        GenericsAndHowItIsUsedInArrayList<String> cr = new GenericsAndHowItIsUsedInArrayList<>();
         cr.add("Sujon");
         cr.add("Ryan");
         System.out.println(cr);
 
-        CustomArrayList<Integer> in = new CustomArrayList<>();
+        GenericsAndHowItIsUsedInArrayList<Integer> in = new GenericsAndHowItIsUsedInArrayList<>();
         in.add(5);
         System.out.println(in);
     }

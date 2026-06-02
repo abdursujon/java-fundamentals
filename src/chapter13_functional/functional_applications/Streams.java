@@ -1,3 +1,5 @@
+package functional_applications;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

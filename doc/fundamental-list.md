@@ -87,7 +87,7 @@ Record x
 - Iterators x
 - Object x
 - Objects x
-- Streams x 
+- functional_applications.Streams x 
 - Collectors x
 
 ### chapter10_object_behavior
@@ -150,19 +150,34 @@ Extra
 20. AssertionsVsExceptions
 
 ### chapter13_functional/
-1. Generics x       
-2. Lambda          
-3. Comparable
-4. Comparator
-5. Runnable
-6. Callable
-7. Predicate
-8. Consumer
-9. Supplier
-10. Method References
-11. Optional
-12. BinaryOperator
-13. Function
+# Prerequisite — the type system functional code is built on
+1. Generics x
+
+# Syntax — how we write implementations
+2. Lambda x
+3. Method References
+
+# Types — the functional interfaces lambdas work with
+4. Function x
+5. Predicate x
+6. Consumer x
+7. Supplier x
+8. BinaryOperator x
+9. Comparator x
+10. Comparable x
+11. Runnable x
+12. Callable x
+
+Conventions: 
+- T = Type (generic element/thing) — List<T>, Function<T,R>
+- E = Element (collections) — List<E>, Set<E>
+- K, V = Key, Value — Map<K,V>
+- R = Return/Result — Function<T,R>
+- V = Value/result — Callable<V>
+
+# Application of different functional interfaces 
+13. Optional
+14. Streams  x
 
 ### chapter14_file_handling/
 - FileHandling

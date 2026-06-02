@@ -84,6 +84,26 @@ class BookDetails extends Abstracts{
         System.out.println("I am an example of Default class who implements Abstract class in Java");
     }
 
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void speakTwo() {
+
+    }
+
+    @Override
+    public void speakThree() {
+
+    }
+
+    @Override
+    public void speakFour() {
+
+    }
+
     public static void main(String[] args){
         BookDetails bd = new BookDetails(
                 "Robot",

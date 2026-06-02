@@ -1,11 +1,9 @@
 # learn-java
 
-A practical way to learning Java fundamentals. 
+A practical way to learn Java fundamentals. 
 Every topic is a small, self-contained, runnable `.java` file you can read, edit, and execute. 
 
 ## Run an example
-
-Files live directly under each chapter folder with no package declaration, we can run them from the file's own directory:
 
 ```bash
 cd fundamentals/chapter1_basics
@@ -28,5 +26,5 @@ java Variables.java
 ### chapter12_exceptions
 ### chapter13_functional
 ### chapter14_file_handling
-### chapter15_advanced
+### chapter15_thread_and_concurrency
 

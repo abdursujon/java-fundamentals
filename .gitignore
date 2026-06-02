@@ -7,7 +7,6 @@ target/
 
 # IDEs
 .idea/
-*.iml
 *.ipr
 *.iws
 .vscode/
