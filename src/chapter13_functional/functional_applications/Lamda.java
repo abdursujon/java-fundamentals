@@ -1,3 +1,5 @@
+package functional_applications;
+
 import functional_interfaces.BinaryOperator;
 import functional_interfaces.Callable;
 
@@ -10,8 +12,8 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 /**
- * Lamda is shorthand for implementing a functional interface in java. More specifically one abstract method.
- * Lamda works with functional interfaces which has exactly one abstract method. Lamda does not work on interface that has
+ * functional_applications.Lamda is shorthand for implementing a functional interface in java. More specifically one abstract method.
+ * functional_applications.Lamda works with functional interfaces which has exactly one abstract method. functional_applications.Lamda does not work on interface that has
  * more than one abstract method.
  * The interface can have more than one other
  * For example:
@@ -47,7 +49,7 @@ public class Lamda {
 
         // 4. Function<T, R> - takes T, returns R
         Function<String, Integer> sLen = s -> s.length();
-        System.out.println(sLen.apply("Lamda")); //  apply abstract method of Function interface
+        System.out.println(sLen.apply("functional_applications.Lamda")); //  apply abstract method of Function interface
 
         // 5. Consumer<T> - takes T, returns nothing
         Consumer<String> print = s -> System.out.println(s.toUpperCase());

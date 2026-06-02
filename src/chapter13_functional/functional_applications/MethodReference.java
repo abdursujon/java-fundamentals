@@ -1,3 +1,5 @@
+package functional_applications;
+
 import functional_interfaces.Consumer;
 import functional_interfaces.Function;
 import java.util.Arrays;

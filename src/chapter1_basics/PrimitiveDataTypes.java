@@ -1,3 +1,6 @@
+/**
+ * Java has 8 primitive data types. Example are shown below.
+ */
 public class PrimitiveDataTypes {
     public byte b = 55;
     public short s = 5555;
