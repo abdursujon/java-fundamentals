@@ -1,7 +1,3 @@
-package concurrency;
-
-import java.util.*;
-
 /**
  * Threads in Java
  * <p>

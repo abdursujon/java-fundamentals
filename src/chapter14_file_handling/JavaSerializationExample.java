@@ -1,4 +1,9 @@
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 
 /**
  * Serialization: turning a live object into bytes (serialize) and rebuilding it later (deserialize).
@@ -23,7 +28,7 @@ import java.io.*;
  *   6. new ObjectInputStream(stream), wraps it; knows how to turn bytes back into objects
  *   7. in.readObject(), Deserialize: rebuilds the object (cast back to its type)
  */
-public class SerializationExample {
+public class JavaSerializationExample {
 
     static class Person implements Serializable {
         private static final long serialVersionUID = 1L; // version id, detects class changes between save and load
@@ -36,15 +41,19 @@ public class SerializationExample {
         }
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException{
         Person original = new Person("Sujon", 65);
-        String file = "src/resource/file_handling/modern-file-system.ser";
+        String file = "src/resource/file_handling/person.ser";
 
         // Serialize - Object -> bytes -> file
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             out.writeObject(original);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } ;
+        }
+
+        // Deserialize - file -> bytes -> object we are reading saved object from serialize data from file we saved it to.
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))){
+            Person personObjectLoaded = (Person) in.readObject();
+            System.out.println("name: " + personObjectLoaded.name + ", age: " + personObjectLoaded.age);
+        }
     }
 }

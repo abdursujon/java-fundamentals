@@ -8,7 +8,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/chapter12_exceptions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter13_functional" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter14_file_handling" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter15_thread_and_concurrency" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter1_basics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter2_control_flow" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter3_arrays" isTestSource="false" />
@@ -18,8 +17,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/chapter7_utility_classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter8_typeof_classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter9_collections_and_java_useful_classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter15_concurrency" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/resource" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="gson-2.11.0" level="project" />
+    <orderEntry type="library" name="gson-2.11.1" level="project" />
   </component>
 </module>

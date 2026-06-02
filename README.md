@@ -10,7 +10,7 @@ to show example output which you can run by IDE run button or commands as stated
 ## Example run 
 
 ```bash
-cd fundamentals/chapter1_basics
+cd src/chapter1_basics
 java Variables.java
 ```
 
@@ -30,7 +30,8 @@ java Variables.java
 - chapter12_exceptions
 - chapter13_functional
 - chapter14_file_handling
-- chapter15_thread_and_concurrency
+- chapter15_concurrency
+- chapter16_jvm_internals
 
 
 > Note: The project is intentionally build up from chapter to chapter, so for best result, I would do them sequentially. But of course if you are not beginner
