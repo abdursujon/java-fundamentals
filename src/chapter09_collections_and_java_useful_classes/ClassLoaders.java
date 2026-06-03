@@ -21,11 +21,11 @@ public class ClassLoaders {
         System.out.println(loadedClass.getName());
 
         // 3. getResourceAsStream(name)  - load a resource file as stream only works when the project has resource directory
-        var stream = classLoader.getResourceAsStream("chapter9_collections_and_java_useful_classes/test_data/large.csv");
+        var stream = classLoader.getResourceAsStream("/test_data/large.csv");
         System.out.println(stream != null? "File found" : "File not found");
 
         // 4. getResource(name) - only works when project has resource directory
-        URL resource = classLoader.getResource("chapter9_collections_and_java_useful_classes/test_data/large.csv");
+        URL resource = classLoader.getResource("/test_data/large.csv");
         System.out.println(resource);
 
         // 5. getSystemClassLoader()
