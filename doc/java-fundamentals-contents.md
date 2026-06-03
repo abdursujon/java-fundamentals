@@ -184,7 +184,7 @@ Conventions:
 - Serialization x
 - NIO x
 
-### chapter15_concurrency/
+### chapter15_concurrency/ 
 - Threads, Runnable/Callable, synchronized, volatile
 - ExecutorService / ThreadPool, Future / CompletableFuture
 - Race conditions / deadlocks, wait()/notify(), Lock/ReentrantLock

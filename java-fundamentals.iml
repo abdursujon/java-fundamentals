@@ -8,16 +8,16 @@
       <sourceFolder url="file://$MODULE_DIR$/src/chapter12_exceptions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter13_functional" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter14_file_handling" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter1_basics" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter2_control_flow" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter3_arrays" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter4_strings" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter5_methods" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter6_input_output" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter7_utility_classes" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter8_typeof_classes" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/chapter9_collections_and_java_useful_classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter01_basics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter02_control_flow" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter03_arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter04_strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter05_methods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter06_input_output" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter07_utility_classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter08_typeof_classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/chapter09_collections_and_java_useful_classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/chapter15_concurrency" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/resource" type="java-resource" />
     </content>
