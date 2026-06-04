@@ -185,11 +185,11 @@ Conventions:
 - NIO x
 
 ### chapter15_concurrency/ 
-- Threads, Runnable/Callable, synchronized, volatile
-- ExecutorService / ThreadPool, Future / CompletableFuture
-- Race conditions / deadlocks, wait()/notify(), Lock/ReentrantLock
+- Threads, Runnable/Callable, synchronized, volatile x
+- ExecutorService / ThreadPool, Future / CompletableFuture x
+- Race conditions / deadlocks, wait()/notify(), Lock/ReentrantLock x
 
 ### chapter16_jvm_internals/
-- Annotations
-- Reflection
-- GarbageCollection
+- Annotations x
+- Reflection x
+- GarbageCollection x

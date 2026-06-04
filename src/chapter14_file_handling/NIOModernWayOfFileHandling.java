@@ -30,6 +30,7 @@ public class NIOModernWayOfFileHandling {
 
         // Append a line of text in existing written file
         Files.writeString(file, "Added: Biscuit", StandardOpenOption.APPEND);
+
         // Read the whole file as one string, we can store that string to operate any operation
         System.out.println(Files.readString(file));
         String s = Files.readString(file);

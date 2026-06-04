@@ -10,7 +10,7 @@ to show example output which you can run by IDE run button or commands as stated
 ## Example run 
 
 ```bash
-cd src/chapter1_basics
+cd src/chapter01_basics
 java Variables.java
 ```
 

@@ -7,15 +7,15 @@ import java.util.concurrent.Future;
  * Future vs CompletableFuture: both represent a result that isn't ready yet because
  * it's being computed on another thread.
  *
- * Why it matters: when you run work in the background you need a handle to get its
- * result later. Future is the basic handle; CompletableFuture is the modern upgrade
- * that lets you chain steps and react when the result arrives, without blocking.
+ * Future is the basic handle, offering only a blocking get() to retrieve the result.
+ * CompletableFuture adds chaining and callbacks, so a result can be transformed and
+ * passed along as it becomes available rather than retrieved by blocking.
  *
- * 1. Future.get() - BLOCKS the current thread until the result is ready
- * 2. CompletableFuture.supplyAsync(supplier) - run a task in the background, returns a result
- * 3. .thenApply(function) - transform the result when it arrives (non-blocking chain)
- * 4. .thenAccept(consumer) - do something with the final result, still non-blocking
- * 5. .join() - like get() but no checked exception
+ * 1. Future.get() - blocks the current thread until the result is ready
+ * 2. CompletableFuture.supplyAsync(supplier) - runs a task in the background and produces a result
+ * 3. .thenApply(function) - transforms the result when it arrives, without blocking
+ * 4. .thenAccept(consumer) - consumes the final result, without blocking
+ * 5. .join() - returns the result like get(), without a checked exception
  */
 public class FutureAndCompletableFuture {
     public static void main(String[] args) throws Exception {

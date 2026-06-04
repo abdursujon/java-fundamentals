@@ -1,10 +1,10 @@
 /**
  * synchronized: only one thread at a time can run a synchronized method on the same
- * object, so shared data can't be corrupted by two threads at once.
+ * object, so shared data cannot be corrupted by two threads at once.
  *
- * Why it matters: count++ is read-modify-write, not a single step. Without locking,
- * two threads read the same value and one update is lost (a race condition). synchronized
- * forces them to take turns, so every increment counts.
+ * count++ is read-modify-write, not a single step. Without locking, two threads read the
+ * same value and one update is lost (a race condition). synchronized forces them to take
+ * turns, so every increment counts.
  */
 public class SynchronizedExample {
 

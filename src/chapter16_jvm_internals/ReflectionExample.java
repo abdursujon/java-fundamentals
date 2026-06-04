@@ -8,15 +8,15 @@ import java.lang.reflect.Method;
  * Reflection: inspecting and using a class at runtime - its fields, methods, constructors -
  * without knowing them at compile time.
  *
- * Why it matters: it's how frameworks create objects and call methods they've never seen
- * (Spring building beans, JUnit finding @Test methods, Gson reading your fields). You rarely
- * write it yourself, but understanding it demystifies how those libraries work.
+ * This is how frameworks create objects and call methods they have never seen at compile
+ * time (Spring building beans, JUnit finding @Test methods, Gson reading an object's fields).
+ * It is rarely written by hand, but it explains how those libraries work internally.
  *
- * 1. obj.getClass() - get the Class object describing a type
- * 2. getDeclaredFields() - list the fields
- * 3. getDeclaredMethods() - list the methods
- * 4. setAccessible(true) - bypass private to read/set a field
- * 5. method.invoke(obj, args) - call a method by reflection
+ * 1. obj.getClass() - gets the Class object describing a type
+ * 2. getDeclaredFields() - lists the fields
+ * 3. getDeclaredMethods() - lists the methods
+ * 4. setAccessible(true) - bypasses private access to read or set a field
+ * 5. method.invoke(obj, args) - calls a method by reflection
  */
 public class ReflectionExample {
 

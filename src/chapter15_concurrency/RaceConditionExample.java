@@ -2,13 +2,13 @@
  * Race condition: two threads read and write the same variable at the same time, and
  * their steps interleave, so updates get lost and the result is wrong.
  *
- * Why it matters: count++ looks like one step but is actually three - read, add, write.
- * If two threads read the same value before either writes back, one increment is lost.
- * The bug is intermittent: the result changes each run, which makes it hard to catch.
+ * count++ looks like one step but is three - read, add, write. When two threads read the
+ * same value before either writes back, one increment is lost. The bug is intermittent:
+ * the result changes each run, which makes it hard to catch.
  *
  * 1. count++ is read-modify-write, not atomic
  * 2. Two threads each increment 10000 times - correct total is 20000
- * 3. No lock here, so the actual total is usually LESS than 20000
+ * 3. No lock here, so the actual total is usually less than 20000
  * 4. Fix: synchronized, ReentrantLock, or AtomicInteger
  */
 public class RaceConditionExample {

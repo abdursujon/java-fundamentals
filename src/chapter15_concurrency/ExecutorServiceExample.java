@@ -3,12 +3,12 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * ExecutorService: a thread pool that manages threads for you, instead of creating
- * and starting Thread objects by hand. You submit tasks, it reuses a fixed set of
+ * ExecutorService: a thread pool that manages threads, instead of creating
+ * and starting Thread objects by hand. We submit tasks, it reuses a fixed set of
  * threads to run them.
  *
- * Why it matters: creating a new Thread per task is expensive and uncontrolled - 1000
- * tasks = 1000 threads. A pool reuses a few threads, so you control how many run at once.
+ * creating a new Thread per task is expensive and uncontrolled - 1000
+ * tasks = 1000 threads. A pool reuses a few threads, so we  control how many run at once.
  * This is how real apps run background work.
  *
  * 1. Executors.newFixedThreadPool(n) - pool with n reusable threads

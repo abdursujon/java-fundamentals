@@ -1,18 +1,18 @@
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * ReentrantLock: a manual lock that does the same job as synchronized, but with more
- * control - you decide exactly when to lock and unlock.
+ * ReentrantLock: a manual lock that does the same job as synchronized, but with explicit
+ * control over when locking and unlocking happen.
  *
- * Why it matters: synchronized auto-locks for a whole block and you can't customise it.
- * ReentrantLock lets you try to lock, time out, or unlock in a different place - useful
- * when you need flexibility. "Reentrant" = the same thread can lock it again without
- * deadlocking itself.
+ * synchronized locks an entire block automatically and cannot be customised. ReentrantLock
+ * supports try-locking, timeouts, and unlocking at a different point than where the lock was
+ * acquired. "Reentrant" means the same thread can acquire the lock again while already holding
+ * it, without deadlocking against itself.
  *
- * 1. lock.lock() - acquire the lock (waits if another thread holds it)
- * 2. try/finally - always unlock in finally so it's released even if the code throws
- * 3. lock.unlock() - release the lock
- * 4. count++ is now safe because only one thread holds the lock at a time
+ * 1. lock.lock() - acquires the lock, waiting if another thread holds it
+ * 2. try/finally - unlocks in finally so the lock is released even if the code throws
+ * 3. lock.unlock() - releases the lock
+ * 4. count++ is safe here because only one thread holds the lock at a time
  */
 public class LockReentrantLockExample {
 
